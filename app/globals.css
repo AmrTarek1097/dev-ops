@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --main-color: rgb(236, 239, 214);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: white;
+
+}
+
+.Lime-color {
+  background-color: var(--main-color);
+
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 8px;
+  background: rgba(248, 157, 19, 1);
+  width: 70%;
+}
+
+.main_bg {
+  /* position: relative; */
+  background: linear-gradient(-3.5deg, transparent 120px, var(--main-color) 0)bottom left,
+    linear-gradient(3.54deg, transparent 80px, #ecefd699 0)bottom right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.portfolio_hero {
+  background: linear-gradient(3.5deg, transparent 120px, #ecefd699 0)bottom left;
+  /* linear-gradient(0deg, transparent 80px, #ffffff99 0)bottom ; */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.custom_shadow {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
+.submit_modal {
+  position: fixed;
+  top: 40%;
+}
+
