@@ -257,7 +257,7 @@ const FormInputs = () => {
             placeholder="Additional comments/Questions "
           />
         </div>
-        <div className="w-full space-y-1">
+        {/* <div className="w-full space-y-1">
           <label
             className="block text-sm font-normal text-gray-700 mb-1"
             htmlFor="file"
@@ -271,7 +271,7 @@ const FormInputs = () => {
             {...register("file")}
             placeholder="Select or Drop a file here"
           />
-        </div>
+        </div> */}
         <div className="flex justify-center mt-4">
           <Button className="w-4/12">Submit</Button>
         </div>

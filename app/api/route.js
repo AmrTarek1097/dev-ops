@@ -55,6 +55,12 @@ export async function POST (req,res) {
             ...mailOptions,
             ...generateEmailContent(finaldata),
             subject: "New Contact Request",
+            attachments: [
+              {
+                filename: "attachment.pdf",
+                path: finaldata.file
+              }
+            ]
         })
     }catch(error){
         console.log(error);

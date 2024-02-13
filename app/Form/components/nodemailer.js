@@ -14,5 +14,6 @@ export const transporter = nodemailer.createTransport({
 
 export const mailOptions ={
     from:email,
+    //change this to targetted mail
     to:email,
 }
